@@ -1,0 +1,23 @@
+{
+  "name": "modelviewer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@ar-js-org/ar.js": "^3.4.7",
+    "aframe": "^1.7.1",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "html5-qrcode": "^2.3.8",
+    "leaflet": "^1.9.4",
+    "locar": "^0.1.8",
+    "mkcert": "^3.2.0",
+    "three": "0.182.0"
+  }
+}

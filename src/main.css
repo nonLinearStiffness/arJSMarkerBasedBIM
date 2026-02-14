@@ -1,0 +1,119 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Ensure AR.js video/canvas always fit the viewport */
+html, body, #app, #ar-view, #ar-canvas, a-scene, .arjs-video, .arjs-canvas, .a-canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+body {
+  overscroll-behavior: none !important;
+  touch-action: none !important;
+}
+
+
+@media (max-width: 600px) {
+  html, body, #app, #ar-view, #ar-canvas, a-scene, .arjs-video, .arjs-canvas, .a-canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+  }
+}
+/* General styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Map container */
+#map {
+  height: 100%;
+}
+
+/* AR View container */
+#ar-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: black;
+  color: white;
+}
+
+#ar-canvas {
+  width: 90vw;
+  height: 90vh;
+  display: block;
+}
+
+/* Model Viewer */
+model-viewer {
+  width: 90vw;
+  height: 90vh;
+}
+
+/* Back button */
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 10;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Responsive button on mobile */
+@media (max-width: 600px) {
+  .btn {
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.center-control {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  line-height: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.center-control:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
