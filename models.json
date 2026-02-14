@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0",
+    "name": "Test Building",
+    "coords": [
+      41.456845,
+      -8.286882
+    ],
+    "modelUrl": "models/ccg.glb"
+  },
+  {
+    "id": "1",
+    "name": "CCG/ZGDV Building",
+    "coords": [
+      41.453189303202734,
+      -8.2883417525851
+    ],
+    "modelUrl": "models/ccg.glb"
+  }
+]
